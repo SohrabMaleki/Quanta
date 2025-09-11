@@ -5,7 +5,16 @@
  * It establishes a modern, physics‑themed aesthetic with a responsive layout.
  */
 
-/* Reset */
+
+
+@font-face {
+  font-family: 'Forte';
+  src: url('../fonts/FORTE.TTF') format('truetype');
+}
+
+
+
+ /* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
