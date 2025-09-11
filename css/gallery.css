@@ -1,0 +1,136 @@
+/* gallery.css
+ *
+ * Styles specific to the dedicated gallery page. This file builds upon
+ * the global styles defined in style.css and only adds rules for the
+ * gallery hero height and the pagination control. Keeping custom
+ * styles in this separate file makes it easy to maintain and
+ * customise the gallery without cluttering the main stylesheet.
+ */
+
+/* Make the hero on the gallery page shorter than the home page hero */
+.hero.hero-small {
+    height: 50vh;
+}
+
+/* Pagination controls below the gallery */
+.gallery-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.gallery-pagination ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.gallery-pagination li {}
+
+.gallery-pagination a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    color: var(--primary);
+    background-color: #fff;
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.gallery-pagination a.active,
+.gallery-pagination a:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* Override the height of gallery images on this page to allow for more
+   images per viewport. The base style uses a fixed 220px height; here
+   we reduce it slightly to fit more images on large screens. */
+.gallery-page-section .gallery-item img {
+    height: 200px;
+}
+
+/*
+ * Lightbox overlay styles
+ *
+ * A single overlay element is used to display full-size images with
+ * captions. It covers the entire viewport with a semi-transparent
+ * background and centres its contents using flexbox. Transitions are
+ * used to fade the overlay in and out smoothly. A close button
+ * anchored to the top-right corner lets users dismiss the overlay.
+ */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2000;
+}
+
+.lightbox-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* The image inside the lightbox scales to fit within the viewport */
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button positioned in the top-right corner */
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 2100;
+}
+
+/* Caption text displayed beneath the image */
+.lightbox-caption {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Arrow buttons for navigating between images in the lightbox */
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2100;
+    padding: 0 0.5rem;
+}
+
+.lightbox-arrow.prev {
+    left: 1rem;
+}
+
+.lightbox-arrow.next {
+    right: 1rem;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People – Quanta</title>
+    <!-- Core site styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Additional styling specific to the people page -->
+    <link rel="stylesheet" href="css/people.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Shared navigation bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/quanta-logo.png" alt="Quanta logo" class="logo-image">
+            <div class="logo-text-group">
+                <span class="logo-text">Quanta</span>
+                <span class="logo-subtext">Physics&nbsp;Department,&nbsp;Sharif University of Technology</span>
+            </div>
+        </div>
+        <div class="nav-toggle" id="navToggle">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#circles">Study Circles</a></li>
+            <li><a href="index.html#news">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section for the people page -->
+    <header class="hero hero-small">
+        <div class="hero-overlay">
+            <h1>Our People</h1>
+            <p>Tracing the leadership of Quanta from its beginnings to the present day.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section people-timeline-section">
+            <div class="container">
+                <h2>Leadership History</h2>
+                <p>Meet the dedicated individuals who have guided Quanta over the years. The current managers are listed first, followed by those who preceded them.</p>
+                <div class="timeline">
+                    <!-- Current managers (example entries) -->
+                    <div class="timeline-level">
+                        <div class="level-title">2025&nbsp;&ndash;&nbsp;Present</div>
+                        <div class="manager-group">
+                            <div class="manager-card">
+                                <img src="images/people/SohrabMaleki.jpg" alt="Sohrab Maleki portrait">
+                                <div class="name">Sohrab Maleki</div>
+                                <div class="role">Founder &amp; Coordinator</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="images/people/zahra.jpg" alt="Zahra Amiri portrait">
+                                <div class="name">Zahra Amiri</div>
+                                <div class="role">Co‑ordinator</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="images/people/ali.jpg" alt="Ali Javidan portrait">
+                                <div class="name">Ali Javidan</div>
+                                <div class="role">Events Lead</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="images/people/radmehr.jpg" alt="Radmehr Fathi portrait">
+                                <div class="name">Radmehr Fathi</div>
+                                <div class="role">Logistics</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="images/people/ashkan.jpg" alt="Ashkan Naseri portrait">
+                                <div class="name">Ashkan Naseri</div>
+                                <div class="role">Media &amp; Outreach</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Previous managers (example entries) -->
+                    <div class="timeline-level">
+                        <div class="level-title">2023&nbsp;&ndash;&nbsp;2024</div>
+                        <div class="manager-group">
+                            <div class="manager-card">
+                                <img src="placeholder_light_gray_block.png" alt="A previous manager">
+                                <div class="name">Samira K.</div>
+                                <div class="role">Coordinator</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="placeholder_light_gray_block.png" alt="A previous manager">
+                                <div class="name">Hamed S.</div>
+                                <div class="role">Events &amp; Outreach</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-level">
+                        <div class="level-title">2021&nbsp;&ndash;&nbsp;2022</div>
+                        <div class="manager-group">
+                            <div class="manager-card">
+                                <img src="placeholder_light_gray_block.png" alt="A previous manager">
+                                <div class="name">Nasim R.</div>
+                                <div class="role">Coordinator</div>
+                            </div>
+                            <div class="manager-card">
+                                <img src="placeholder_light_gray_block.png" alt="A previous manager">
+                                <div class="name">Farshad T.</div>
+                                <div class="role">Logistics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more levels as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;&nbsp;2025&nbsp;Quanta Study Circles. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+    // Mobile navigation toggle for small screens
+    document.getElementById('navToggle').addEventListener('click', function() {
+        var nav = document.getElementById('navLinks');
+        nav.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

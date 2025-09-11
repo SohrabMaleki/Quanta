@@ -75,15 +75,19 @@
                             <div class="physics-list">
                                 <div class="phy-item">
                                     <img src="images/icon-kinetic.png" alt="Kinetic Theory icon">
-                                    <a href="circles/kinetic-theory.html" class="link">Kinetic Theory</a>
+                                    <a href="circles/PhysicsAndMathematics/kinetic-theory.html" class="link">Kinetic Theory</a>
                                 </div>
                                 <div class="phy-item">
                                     <img src="images/icon-quantum.png" alt="Quantum Theory icon">
-                                    <a href="circles/quantum-theory.html" class="link">Quantum Theory</a>
+                                    <a href="circles/PhysicsAndMathematics/quantum-theory.html" class="link">Quantum Theory</a>
                                 </div>
                                 <div class="phy-item">
                                     <img src="images/icon-stochastic.png" alt="Stochastic Processes icon">
-                                    <a href="#" class="link">Stochastic Processes</a>
+                                    <a href="circles/PhysicsAndMathematics/stochastic-processes.html" class="link">Stochastic Processes</a>
+                                </div>
+                                <div class="phy-item">
+                                    <img src="images/icon-qft.png" alt="Quantum Field Theory icon">
+                                    <a href="circles/PhysicsAndMathematics/quantum-field-theory.html" class="link">Quantum Field Theory</a>
                                 </div>
                                 <!-- Add more physics/maths circles with icons -->
                             </div>
@@ -131,32 +135,23 @@
             </div>
         </section>
         <section id="gallery" class="section gallery-section">
-            <div class="container">
-                <h2>Gallery</h2>
-                <p>Snapshots from our study circles, events and the universe that inspires us.</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/hero-bg.png" alt="Abstract physics background">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/lecture.png" alt="Lecture hall">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/cosmos.png" alt="Cosmos galaxy">
-                    </div>
-                    
-                    <div class="news-extra">
-                        <img src="images/more-images.png" alt="View all images">
-                        <a href="gallery.html" class="news-extra-link">View All Images</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
+  <div class="container">
+    <h2>Gallery</h2>
+    <p>Snapshots from our study circles, events and the universe that inspires us.</p>
+    <div class="gallery-grid" id="homeGallery">
+      <!-- images will be injected here -->
+      <div class="news-extra">
+        <img src="images/more-images.png" alt="View all images">
+        <a href="gallery.html" class="news-extra-link">View All Images</a>
+      </div>
+    </div>
+  </div>
+</section>
+
         <section id="people" class="section resources-section">
             <div class="container">
                 <h2>People</h2>
-                <p>Here's a list of people helping Quanta (including management and holding study circles) to be an effective community:</p>
+                <p>Here's a list of people helping Quanta (including management and holding study circles) to be an effective community. You can find more about the people leading Quanta in <a href="people.html" class="link">this page</a>.</p>
 
                 <!-- Grid of people cards with portrait and title -->
                 <div class="people-grid">
@@ -300,5 +295,7 @@
         });
     })(); */
     </script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/home-gallery.js"></script>
 </body>
 </html>
