@@ -1,0 +1,75 @@
+/* news.css
+ *
+ * Styles specific to individual news articles. These styles build upon
+ * the base definitions in style.css while providing a polished layout
+ * for news content.
+ */
+
+/* Headline section at the top of the article */
+.news-hero-section {
+    background-color: var(--light);
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.news-title {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* Article layout */
+.news-article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Content column */
+.news-body {
+    flex: 3;
+    min-width: 250px;
+}
+
+.news-body p {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.news-body h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+/* Image column */
+.news-image {
+    flex: 2;
+    max-width: 40%;
+    min-width: 200px;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-article {
+        flex-direction: column;
+    }
+    .news-image {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+/* all-news.css
+ *
+ * Additional styles specific to the all-news page. It keeps the same
+ * aesthetic as the rest of the site while allowing for small customisations.
+ */
+
+/* Make the hero on the news archive page shorter than the home page hero */
+.hero.hero-small {
+    height: 50vh;
+}
