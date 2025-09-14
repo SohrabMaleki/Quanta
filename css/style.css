@@ -26,6 +26,9 @@
 
 
 
+ul {
+    margin-left: 20px;
+}
 /* Colour palette */
 :root {
     --primary: #0b214a;

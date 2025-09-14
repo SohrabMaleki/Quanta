@@ -73,8 +73,8 @@
                             In this lecture, I start the investigating elementary kinetic theory. I obtain the so-called Maxwell-Boltzmann distribution and then, delve into calculating cool properties of matter assuming thermal equilibrium.
                         </p>
                         <div class="session-links">
-                            <a href="https://youtu.be/vGDPb_KVPFQ" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt1.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="" class="btn btn-secondary" onclick="openVideo('vGDPb_KVPFQ'); return false;">Recording</a>
+                            <a href="../../files/kt1.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/muTp_7Q_Y54" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt2.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt2.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/hKLHaLn7ch0" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt3.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt3.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/S_hVJb8l7HY" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt4.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt4.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/aRKiGDrKWKI" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt5.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt5.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/6B0nCsVqFIA" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt6.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt6.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/H2kriva5jgI" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt7.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt7.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/W8zB1rt_F8w" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt8.pdf" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt8.pdf" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                         </p>
                         <div class="session-links">
                             <a href="https://youtu.be/RygAC40HTks" class="btn btn-secondary">Recording</a>
-                            <a href="../files/kt9" class="btn btn-secondary">Notes</a>
+                            <a href="../../files/kt9" class="btn btn-secondary">Notes</a>
                         </div>
                     </div>
                 </div>
@@ -263,5 +263,66 @@
         });
     })();
     </script>
+
+
+    <div id="video-overlay">
+    <div id="video-box">
+        <span id="close-btn" onclick="closeVideo()">&times;</span>
+        <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <style>
+        /* Overlay background */
+        #video-overlay {
+            display: none; /* hidden until clicked */
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+        }
+
+        /* Centered video box */
+        #video-box {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            margin: 5% auto;
+            background: #000;
+        }
+
+        /* Responsive iframe */
+        #video-box iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* Close button */
+        #close-btn {
+            position: absolute;
+            top: -30px;
+            right: -10px;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+        }
+        </style>
+
+        <script>
+        function openVideo(videoId) {
+            var overlay = document.getElementById("video-overlay");
+            var frame = document.getElementById("video-frame");
+            frame.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+            overlay.style.display = "block";
+        }
+
+        function closeVideo() {
+            var overlay = document.getElementById("video-overlay");
+            var frame = document.getElementById("video-frame");
+            frame.src = ""; // stop the video
+            overlay.style.display = "none";
+        }
+        </script>
 </body>
 </html>
