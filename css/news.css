@@ -8,7 +8,7 @@
 /* Headline section at the top of the article */
 .news-hero-section {
     background-color: var(--light);
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -29,7 +29,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 /* Content column */
@@ -44,7 +43,7 @@
 }
 
 .news-body h3 {
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     margin-bottom: 0.5rem;
     color: var(--primary);
 }
