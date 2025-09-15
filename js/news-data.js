@@ -7,38 +7,22 @@
 // from this array automatically.
 
 const newsItems = [
-  
-  {
-    id: 'new-topic',
-    title: 'Descriptive title',
-    date: 'Month Day, Year',
-    summary: 'Short summary used on listing pages.',
-    image: 'your-image.jpg',
-    link: 'news/news-template.html'
+
+    {
+    id: '002',
+    title: 'New Study Circles!',
+    date: '9/15/2025',
+    summary: "We're considering some new study circles as the new semester starts.",
+    image: 'images/quanta-logo.png',
+    link: 'news/02.html'
   },
   {
-    id: 'new-circle-statistical-physics',
-    title: 'New Circle: Statistical Physics',
-    date: 'July\u00a030,\u00a02025',
-    summary: 'We are excited to announce a new study circle focusing on Statistical Physics starting this fall. Join us to explore partition functions, fluctuations and critical phenomena.',
-    image: 'particle.jpg',
-    link: 'news/new-circle-statistical-physics.html'
-  },
-  {
-    id: 'guest-lecture-cosmology',
-    title: 'Guest Lecture on Cosmology',
-    date: 'July\u00a015,\u00a02025',
-    summary: 'Professor A.\u00a0B.\u00a0Speaker gave an inspiring lecture on the evolution of galaxies and the cosmic microwave background. Video and slides are now available.',
-    image: 'cosmos.jpg',
-    link: 'news/guest-lecture-cosmology.html'
-  },
-  {
-    id: 'recap-quantum-tests-session',
-    title: 'Recap: Quantum Tests Session',
-    date: 'June\u00a010,\u00a02025',
-    summary: 'We concluded our second session on Quantum Tests, discussing the interference postulate and the introduction of transition amplitudes using unitary matrices.',
-    image: 'lecture.jpg',
-    link: 'news/recap-quantum-tests-session.html'
+    id: '001',
+    title: 'Weekly Schedule',
+    date: '9/12/2025',
+    summary: 'The schedule of circles of this week',
+    image: 'images/ws1.jpg',
+    link: 'news/01.html'
   }
 
 ];

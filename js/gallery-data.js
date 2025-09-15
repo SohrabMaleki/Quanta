@@ -16,10 +16,10 @@ const galleryImages = [
     // Each entry can be either a string (the filename) or an object with
     // `src` and `caption` properties. Captions will appear beneath the
     // full-size image in the lightbox.
-    { src: '6.jpg', caption: 'Lecture hall' },
-    { src: '5.jpg', caption: 'Lecture hall' },
-    { src: '4.jpg', caption: 'Lecture hall' },
-    { src: '3.jpg', caption: 'Lecture hall' },
-    { src: '2.jpg', caption: 'Particle collision' },
-    { src: '1.jpg', caption: 'Cosmos galaxy' }
+    { src: '6.jpg', caption: '2020' },
+    { src: '5.jpg', caption: '2020' },
+    { src: '4.jpg', caption: '2020' },
+    { src: '3.jpg', caption: '2020' },
+    { src: '2.jpg', caption: '2020' },
+    { src: '1.jpg', caption: '2020' }
 ];
